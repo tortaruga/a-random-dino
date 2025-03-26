@@ -42,5 +42,24 @@
     </main>
 
     <script src="./app.js"></script>
+    <script>
+        // title animation
+        const title = document.querySelector('header h1');
+        const text = 'A RANDOM DINO';
+        
+        function animateText(text, parent) {
+            const letters = text.split('');
+ 
+            letters.forEach((letter, index) => {
+            const span = document.createElement('span');
+            span.textContent = letter;
+            const delay = 0.1 * Number(index);
+            span.style.animationDelay = delay + 's';
+            parent.appendChild(span); 
+            })
+        }
+
+animateText(text, title);
+    </script>
 </body>
 </html>

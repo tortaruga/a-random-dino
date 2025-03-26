@@ -5,7 +5,6 @@ const dinoName = document.getElementById('dino-name');
 const dinoSummary = document.getElementById('dino-summary');
 const dinoDescription = document.getElementById('dino-description');
 const wrapper = document.querySelector('.random-dino-wrapper');
-const title = document.querySelector('header h1');
 
 const generateDinoBtn = document.getElementById('generate-random-dino');
 
@@ -63,10 +62,9 @@ async function getRandomDinoInfo() {
         hideElement(loading);
         displayElement(errorMsg);
     }
-
 }
 
-  
+// utility functions
 function capitalizeWords(str) {
     return str.trim()
     .split(' ')
@@ -81,31 +79,3 @@ function hideElement(el) {
 function displayElement(el) {
     el.style.display = 'flex';
 }
-
-function animateTitle() {
-    console.log(title.childNodes)
-    Array.from(title.childNodes).forEach((span, index) => {
-        const delay = 0.1 * Number(index);
-        span.style.animation = "jump 3s infinite";
-        span.style.animationDelay = delay + 's'; 
-    })
- 
-} 
-
-
-function createTitle() {
-    const text = 'A RANDOM DINO';
-    const letters = text.split('');
-
-    letters.forEach((letter, index) => {
-        const span = document.createElement('span');
-        span.textContent = letter;
-        const delay = 0.1 * Number(index);
-        // span.style.animation = "jump 3s infinite";
-        span.style.animationDelay = delay + 's';
-        title.appendChild(span); 
-    })
-}
-
-createTitle();
-// animateTitle(); 

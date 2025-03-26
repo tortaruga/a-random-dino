@@ -83,7 +83,7 @@ header h1 {
 }
 
 header h1 span {
-    animation: jump 1s infinite; 
+    animation: animate-title 1s infinite; 
 }
 
 /* main section */
@@ -203,7 +203,7 @@ main {
     }
 }
 
-@keyframes jump {
+@keyframes animate-title {
     0%, 100% {
         color: var(--accent2);
 

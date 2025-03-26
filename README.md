@@ -1,0 +1,1 @@
+get name and description of a random dinosaur. built with [dinoapi](https://dinoapi.brunosouzadev.com/)
