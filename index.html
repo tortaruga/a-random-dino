@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a random dinosaur</title>
+    <link rel="shortcut icon" href="./assets/dino.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1></h1>
+    </header>
+    <main>
+        <div class="random-dino-wrapper">
+            <p class="instructions">want to know about a random dinosaur? click the button!</p>
+            <button type="button" id="generate-random-dino">generate</button>
+
+            <p id="loading">loading... <img class="icon" src="./assets/loading.png" alt="cute dinosaur waiting"></p>
+
+            <div id="result"> 
+                <h1 id="dino-name">name</h1>
+                <p id="dino-summary">summary</p>
+                <p id="dino-description">description</p>
+            </div>
+
+            <p id="error">error retrieving data T.T please try again <img class="icon" src="./assets/error.png" alt="sad dino"></p>
+        </div>
+
+        <div class="info">
+            <p>hello! <img class="icon" src="./assets/dino.png" alt="cute dinosaur"></p>
+            <p>click the button to get details about a random dinosaur</p>
+
+            <p>this project is built with <a href="https://dinoapi.brunosouzadev.com/" target="_blank">dinoapi &#128154</a></p>
+        </div>
+        <div class="attribution">
+            <p>cute dinosaur icons by <a href="https://www.freepik.com/" target="_blank">freepik</a></p>
+            <p>coded by <a href="https://github.com/tortaruga" target="_blank">tortaruga</a></p>
+        </div>
+        
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
